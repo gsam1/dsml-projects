@@ -23,3 +23,7 @@ This will change if something else comes to mind, but for now it is as follows:
 4. End-to-End Project
     * Make a prediction system with a dynamic dataset pulled from an api or scraped.
 5. Different Machine Learning Algorithm showcases that come to mind.
+
+## Comments on the project
+1. Data_Cleaning
+    * With Python - This... has taken a life on its own. I think I've made a lot of mistakes in assuming things, but for the sake of fooling around with *real* data I will go on.
