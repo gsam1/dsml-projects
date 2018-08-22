@@ -27,3 +27,4 @@ This will change if something else comes to mind, but for now it is as follows:
 ## Comments on the project
 1. Data_Cleaning
     * With Python - This... has taken a life on its own. I think I've made a lot of mistakes in assuming things, but for the sake of fooling around with *real* data I will go on.
+    * With R - Although not a *classic* sense a cleaning data project - as no linking with other data sets was done I managed to answer the questions I wanted. However, the more I dig in the data the more thing I come up with...
