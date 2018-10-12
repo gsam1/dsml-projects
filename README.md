@@ -31,7 +31,8 @@ This will change if something else comes to mind, but for now it is as follows:
 2. Data Acquisition
     * Python - Settled on scraping the 'DVD and Streaming' section of Rotten Tomatoes, while crosschecking it with the genres in IMDB. The goal is to see the difference between the critic score and the viewer score by genre. I found relatively interesting the differences between critics and viewer scores for the genres, as well as what happened during the years.
 3. Data Storytelling
-    * Python - Chose to explore the 'Telco Customer Churn' and create a profile for the customer that most likely will leave.
+    * Python - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
 4. End-to-End Project
 5. Playground
     * Python - Various undertakings and playground with data.
+        * [Housing Prices Kaggle Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) - Submitted prediction results. Evaluated various regression techniques.
