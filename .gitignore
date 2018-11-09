@@ -2,6 +2,10 @@
 /2_Data_Acquisition/.ipynb_checkpoints/*
 /2_Data_Acquisition/*.json
 /2_Data_Acquisition/*.log
+/3_Data_Storytelling/.ipynb_checkpoints/*
+/3_Data_Storytelling/data/*
+/3_Data_Storytelling/*.RData
 /5_Playground/.ipynb_checkpoints/*
 /5_Playground/datasets/*
-/ipynb_checkpoints/*
+/5_Playground/submissions/*
+/.ipynb_checkpoints/*
