@@ -37,3 +37,5 @@ This will change if something else comes to mind, but for now it is as follows:
 5. Playground
     * Python - Various undertakings and playground with data.
         * [Housing Prices Kaggle Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) - Submitted prediction results. Evaluated various regression techniques.
+        * [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic) - Another Kaggle competition. This time for classification.
+        * CIFAR 10 Example - Using a ConvNet trying to get accurate class predicitions for the items, contained in the famouse [CIFAR 10](https://www.cs.toronto.edu/~kriz/cifar.html).
