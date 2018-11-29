@@ -30,8 +30,8 @@ This will change if something else comes to mind, but for now it is as follows:
 2. Data Acquisition
     * [Differences between Rotten Tomatoes' Tomatometer and Audience score - filtered by genre. [P]](https://github.com/gsam1/dsml-projects/blob/master/2_Data_Acquisition/1_DA_Python_Project.ipynb) - Settled on scraping the 'DVD and Streaming' section of Rotten Tomatoes, while crosschecking it with the genres in IMDB. The goal is to see the difference between the critic score and the viewer score by genre. I found relatively interesting the differences between critics and viewer scores for the genres, as well as what happened during the years.
 3. Data Exploration Through Vizualizations
-    * [Exploring Telco Customer Churn](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_Python.ipynb) - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
-    * [Google Play Store Twitter Sentiment Analysis](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_R.ipynb) - Looked into the relation between Google Play App installs and twitter sentiment.
+    * [Exploring Telco Customer Churn[P]](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_Python.ipynb) - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
+    * [Google Play Store Twitter Sentiment Analysis[R]](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_R.ipynb) - Looked into the relation between Google Play App installs and twitter sentiment.
 4. End-to-End Project
 5. Playground
     * Python - Various undertakings and playground with data.
