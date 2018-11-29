@@ -1,11 +1,9 @@
 # dsml-projects
 Repository for Data Science / Machine Learning (DSML) projects I did for fun, exploring different ideas and challenges.
 
-Some of the previous more "random" things I did are located [here](https://github.com/gsam1/my-ipython-notebooks).
-
 ## Motivation 
-I wanted to do have a more structured repo for the projects I want to do, besides just randomly throwing them into jupyter notebooks into a repo.
-By structered I mean that I have a list of projects that I want to do and all of them will explore different aspects of handling data.
+I wanted to do have a more structured repo for my DSML projects and playgrounds, besides just randomly throwing the jupyter notebooks into a repo.
+By "structered" I mean that I have a list of projects that I want to do and all of them will explore different aspects of handling data.
 
 The topics for each project will be different and the work will be stored in a jupyter notebook and the equivalent in R.
 
@@ -17,25 +15,27 @@ This will change if something else comes to mind, but for now it is as follows:
 2. Data Scraping/Mining
     * One project in Python
     * Gather the dataset myself.
-3. Data Storytelling
+3. Data Exploration Through Vizualizations
     * 2 Projects - one in Python and one in R.
     * More geared towards data visiualizations.
 4. End-to-End Project
     * Make a prediction system with a dynamic dataset pulled from an api or scraped.
-5. Different Machine Learning Algorithm showcases that come to mind.
+5. Different Machine Learning Algorithm usecases and Project that come to mind.
+    * I'll store all my Kaggle competition submissions.
 
 ## Comments on the project
 1. Data_Cleaning
-    * With Python - This... has taken a life on its own. I think I've made a lot of mistakes in assuming things, but for the sake of fooling around with *real* data I will go on.
-    * With R - Although not a *classic* sense a cleaning data project - as no linking with other data sets was done I managed to answer the questions I wanted. However, the more I dig in the data the more thing I come up with...
+    * [Doing Business Indicators in the Balkans and availability of skilled workers [P]](https://github.com/gsam1/dsml-projects/blob/master/1_Data_Cleaning/1_DC_Python_Project.ipynb) - I think I've made a lot of mistakes in assuming things, but for the sake of fooling around with *real* data I will go on. In addition changing the dimensionality reduction technique from PCA to t-SNE broke my whole logic. Have to revisit it.
+    * [Mobile Subscribers Penetration [R]](https://github.com/gsam1/dsml-projects/blob/master/1_Data_Cleaning/1_DC_R_Project.ipynb) - Although not a *classic* sense a cleaning data project - as no linking with other data sets was done I managed to answer the questions I wanted initially.
 2. Data Acquisition
-    * Python - Settled on scraping the 'DVD and Streaming' section of Rotten Tomatoes, while crosschecking it with the genres in IMDB. The goal is to see the difference between the critic score and the viewer score by genre. I found relatively interesting the differences between critics and viewer scores for the genres, as well as what happened during the years.
-3. Data Storytelling
-    * Python - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
-    * R - Looked into the relation between Google Play App installs and twitter sentiment.
+    * [Differences between Rotten Tomatoes' Tomatometer and Audience score - filtered by genre. [P]](https://github.com/gsam1/dsml-projects/blob/master/2_Data_Acquisition/1_DA_Python_Project.ipynb) - Settled on scraping the 'DVD and Streaming' section of Rotten Tomatoes, while crosschecking it with the genres in IMDB. The goal is to see the difference between the critic score and the viewer score by genre. I found relatively interesting the differences between critics and viewer scores for the genres, as well as what happened during the years.
+3. Data Exploration Through Vizualizations
+    * [Exploring Telco Customer Churn](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_Python.ipynb) - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
+    * [Google Play Store Twitter Sentiment Analysis](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_R.ipynb) - Looked into the relation between Google Play App installs and twitter sentiment.
 4. End-to-End Project
 5. Playground
     * Python - Various undertakings and playground with data.
-        * [Housing Prices Kaggle Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) - Submitted prediction results. Evaluated various regression techniques.
-        * [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic) - Another Kaggle competition. This time for classification.
-        * CIFAR 10 Example - Using a ConvNet trying to get accurate class predicitions for the items, contained in the famouse [CIFAR 10](https://www.cs.toronto.edu/~kriz/cifar.html).
+        * [Housing Prices Kaggle Competition](https://github.com/gsam1/dsml-projects/blob/master/5_Playground/House_Prices_Advanced_Regression_Techniques.ipynb) - Submitted prediction results. Evaluated various regression techniques.
+        * [Titanic: Machine Learning from Disaster](https://github.com/gsam1/dsml-projects/blob/master/5_Playground/Titanic_Machine_Learning_from_Disaster.ipynb) - Another Kaggle competition. This time for classification.
+        * [CIFAR 10 Example](https://github.com/gsam1/dsml-projects/blob/master/5_Playground/CIFAR10_Example.ipynb) - [WIP] Using a ConvNet trying to get accurate class predicitions for the items, contained in the famous [CIFAR 10](https://www.cs.toronto.edu/~kriz/cifar.html).
+        * [Movie Genre Prediction by Poster](https://github.com/gsam1/dsml-projects/blob/master/5_Playground/Movie_Genre_Prediction_by_Poster.ipynb) - [WIP] Trying to predict a movie's genre by just looking at the poster. 
