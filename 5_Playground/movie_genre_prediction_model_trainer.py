@@ -7,7 +7,7 @@ from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
 from keras.models import load_model
-from keras.processing.image import ImageDataGenerator
+from keras.preprocessing.image import ImageDataGenerator
 
 MODEL_FILEPATH = sys.argv[2]
 TRAIN_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_Movies/posters/train'
