@@ -29,7 +29,6 @@ def create_generator(location):
     )
 
     return generator
-)
 
 def load_model():
     model = load_model(MODEL_FILEPATH)
