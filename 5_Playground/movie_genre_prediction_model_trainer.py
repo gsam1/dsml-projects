@@ -2,10 +2,10 @@ import os
 import sys
 # dl libraries
 from keras.models import Sequential
-from keras.models import Conv2D
-from keras.models import MaxPooling2D
-from keras.models import Flatten
-from keras.models import Dense
+from keras.layers import Conv2D
+from keras.layers import MaxPooling2D
+from keras.layers import Flatten
+from keras.layers import Dense
 from keras.models import load_model
 from keras.processing.image import ImageDataGenerator
 
@@ -28,7 +28,7 @@ def create_generator(location):
         seed = 42
     )
 
-    return generator
+    return generator    
 
 def load_model():
     model = load_model(MODEL_FILEPATH)
