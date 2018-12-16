@@ -9,10 +9,16 @@ from keras.layers import Dense
 from keras.models import load_model
 from keras.preprocessing.image import ImageDataGenerator
 
+
 MODEL_FILEPATH = sys.argv[1]
 TRAIN_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_Movies/posters/train'
 TEST_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_Movies/posters/test'
 VALIDATION_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_Movies/posters/validation'
+# Check if number of epochs are defined
+try:
+    EPOCHS = sys.argv[2]
+except IndexError:
+    EPOCHS = 10
 
 def create_generator(location):
     '''
@@ -42,7 +48,7 @@ def save_trained_model(model, name):
 def train_model(model, train_generator, validation_generator):
     model.fit_generator(train_generator,
                          steps_per_epoch = 23723,
-                         epochs = 10,
+                         epochs = EPOCHS,
                          validation_data = validation_generator,
                          validation_steps = 5823)
     print('Model training complete.')
