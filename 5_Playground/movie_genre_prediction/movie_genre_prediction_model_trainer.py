@@ -16,7 +16,7 @@ TEST_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_M
 VALIDATION_LOCATION = '/media/fury/data/Scripts/the_movies_data_scraper/datasets/The_Movies/posters/validation'
 # Check if number of epochs are defined
 try:
-    EPOCHS = sys.argv[2]
+    EPOCHS = int(sys.argv[2])
 except IndexError:
     EPOCHS = 10
 
@@ -29,9 +29,9 @@ def create_generator(location):
         location,
         target_size = (400, 400),
         color_mode = 'rgb',
-        batch_size = 16,
+        batch_size = 8,
         class_mode = 'categorical',
-        seed = 42
+        shuffle = False
     )
 
     return generator    
@@ -47,10 +47,10 @@ def save_trained_model(model, name):
 
 def train_model(model, train_generator, validation_generator):
     model.fit_generator(train_generator,
-                         steps_per_epoch = 23723,
+                         steps_per_epoch = train_generator.n // train_generator.batch_size,
                          epochs = EPOCHS,
                          validation_data = validation_generator,
-                         validation_steps = 5823)
+                         validation_steps = validation_generator.n // validation_generator.batch_size)
     print('Model training complete.')
     return model
 
