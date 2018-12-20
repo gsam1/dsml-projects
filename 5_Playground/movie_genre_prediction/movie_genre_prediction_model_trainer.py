@@ -1,13 +1,14 @@
 import os
 import sys
 # dl libraries
+import keras
 from keras.models import Sequential
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
 from keras.models import load_model
-# from keras.optimizers import Adam
+from keras.optimizers import Adam
 from keras.preprocessing.image import ImageDataGenerator
 
 
@@ -36,13 +37,37 @@ def create_generator(location):
 
     return generator    
 
+def create_model():
+    vgg16_model = keras.applications.vgg16.VGG16()
+    model = Sequential()
+
+    for layer in vgg16.layer[:-1]:
+        model.add(layer)
+    
+    for layer in model.layer:
+        layer.trainable = False
+
+    model.add(Dense(23, activation = 'sigmoid'))
+    
+    model.compile(Adam(lr = .0001), loss = 'categorical_crossentropy', metrics = ['accuracy'])
+
+    return model
+
+
 def load_compiled_model():
-    model = load_model(MODEL_FILEPATH)
-    print('Model Loaded.')
+    if MODEL_FILEPATH == 'int':
+        model = create_model()
+    else:
+        model = load_model(MODEL_FILEPATH)
+        print('Model Loaded.')
     return model
 
 def save_trained_model(model, name):
-    model.save(name + '.model')
+    if MODEL_FILEPATH == 'int':
+        model.save(name + 'vgg.model')
+    else:
+        model.save(name + '.model')
+    
     print('Model %s saved.' % (name))
 
 def train_model(model, train_generator, validation_generator):
