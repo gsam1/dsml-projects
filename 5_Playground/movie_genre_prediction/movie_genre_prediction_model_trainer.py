@@ -7,7 +7,7 @@ from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
 from keras.models import load_model
-from keras.optimizers import Adam
+# from keras.optimizers import Adam
 from keras.preprocessing.image import ImageDataGenerator
 
 
@@ -32,7 +32,6 @@ def create_generator(location):
         color_mode = 'rgb',
         batch_size = 8,
         class_mode = 'categorical',
-        shuffle = False
     )
 
     return generator    
