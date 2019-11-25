@@ -6,9 +6,11 @@
 /3_Data_Storytelling/.ipynb_checkpoints/*
 /3_Data_Storytelling/data/*
 /3_Data_Storytelling/*.RData
+/4_End-to-End_Project/People_Counting_From_Video_Feed/PoC/example_dataset/*
 /5_Playground/*.old.*
 /5_Playground/.ipynb_checkpoints/*
 /5_Playground/datasets/*
 /5_Playground/submissions/*
 /5_Playground/apikeys/*
+/5_Playground/movie_genre_prediction/*
 /.ipynb_checkpoints/*
