@@ -34,6 +34,7 @@ This will change if something else comes to mind, but for now it is as follows:
     * [Exploring Telco Customer Churn[P]](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_Python.ipynb) - Chose to explore the 'Telco Customer Churn' and I created a profile for the customer that is most likely will leave.
     * [Google Play Store Twitter Sentiment Analysis[R]](https://github.com/gsam1/dsml-projects/blob/master/3_Data_Storytelling/1_DS_R.ipynb) - Looked into the relation between Google Play App installs and twitter sentiment.
 4. End-to-End Project
+    * People Counting From the Video Feed - Decided on creating a people counter via Video Feeds for my first End-to-End Project. Started first with testing the water with a Proof-of-Concept, which later will move on to full fledged api that will infer on new a video feed.
 5. Playground
     * Python - Various undertakings and playground with data.
         * [Housing Prices Kaggle Competition](https://github.com/gsam1/dsml-projects/blob/master/5_Playground/House_Prices_Advanced_Regression_Techniques.ipynb) - Submitted prediction results. Evaluated various regression techniques.
