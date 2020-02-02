@@ -149,16 +149,16 @@ def image_processor(df_location, batch_size=4, n_items_processed=None, new=True,
         # send the batch in
         items_processed = process_batch(tmp_df, num_procs)
         
-        split_0_df_bcp.loc[items_processed, 'processed'] = True
+#         split_0_df_bcp.loc[items_processed, 'processed'] = True
         
     
     # save the state of the batches in the df
-    count_processed = split_0_df_bcp[split_0_df_bcp['processed']].shape[0]
-    split_0_df_bcp.to_csv(f'training_dataset/split_2_proc_{count_processed}.csv', index=False)
+#     count_processed = split_0_df_bcp[split_0_df_bcp['processed']].shape[0]
+#     split_0_df_bcp.to_csv(f'training_dataset/split_2_proc_{count_processed}.csv', index=False)
     
     print('Complete!')
-    report_to_overwatch('VM:DP:P', 'Atlas', f'{count_processed} densities created!')
+    report_to_overwatch('VM:DP:P', 'Atlas', f'{n_items_processed} densities created!')
 
 
 if __name__ == '__main__':
-    image_processor('training_dataset/split_2.csv', batch_size=12, n_items_processed=300, new=True, prev_count=0)
+    image_processor('training_dataset/split_1.csv', batch_size=12, n_items_processed=300, new=True, prev_count=0)
